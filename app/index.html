@@ -8,142 +8,153 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-block">
-                <a class="logo">
-                    <img src="./images/logo.svg" alt="logo">
-                    <span class="logo__text">Travel Portal </span>
-                </a>
-                <nav class="header__navigation">
-                    <ul class="navigation">
-                        <li>How It Works</li>
-                        <li>Plan Your Trip</li>
-                        <li>Destinations</li>
-                        <li>Travel Stories</li>
-                    </ul>
-                </nav>
-                <div class="header__buttons">
-                    <button class="button">Login</button>
+    <div class="wrapper">   
+        <main class="page">
+            
+            <div class="main-screen__background ibg">
+                <img src="./images/mainBackground.jpg" alt="background">
+                <div class="header">
+                    <div class="container">
+                        <div class="header-block">
+                            <a  href="#" class="logo" >
+                                <span class="logo__image"></span>
+                                <span class="logo__text">Travel Portal </span>
+                            </a>
+                            <nav class="header__navigation menu">
+                                <ul class="navigation">
+                                    <li class="navigation__link"><a href="#">How It Works</a>
+                                        </li>
+                                    <li class="navigation__link"><a href="#">Plan Your Trip</a> </li>
+                                    <li class="navigation__link"><a href="#">Destinations</a>
+                                        </li>
+                                    <li class="navigation__link"><a href="#">Travel Stories</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__buttons">
+                                <button class="button">Login</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <section class="preview">
+                    <div class="container">
+                        <div class="preview-block">
+                            <h1 class="preview__title">Explore the beauty of the World</h1>
+                            <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
+                        <div class="preview__search search-block">
+                            <input type="text" class="search__txt" placeholder="What would you like to do?">
+                            <a href="#" class="search__btn">Start Planning</a>
+                        </div>
+                        </div>
+                        
+        
+                    </div>
+                </section>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="preview">
-            <div class="container">
-                <h1 class="preview__title">Explore the beauty of the World</h1>
-                <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
-                <div class="header__search search-block">
-                    <input type="text" class="search__txt" placeholder="What would you like to do?">
-                    <a href="#" class="search__btn">Start Planning</a>
-                </div>
-
-            </div>
-        </section>
-        <section class="steps">
-            <div class="container">
-                <p class="steps__title title">3 STEPS TO THE PERFECT TRIP</p>
-                <div class="layout-3-column">
-                    <div class="steps__column">
-                        <div class="column__icon">
-                            <span class="icon-square"></span>
+            
+            
+            
+            <section class="steps">
+                <div class="container">
+                    <p class="steps__title title">3 STEPS TO THE PERFECT TRIP</p>
+                    <div class="layout-3-column">
+                        <div class="steps__column">
+                            <div class="column__icon">
+                                <span class="icon-square"></span>
+                            </div>
+                            <p class="column__text">Tell us what you want to do</p>
                         </div>
-                        <p class="column__text">Tell us what you want to do</p>
-                    </div>
-                    <div class="steps__column">
-                        <div class="column__icon">
-                            <span class="icon-square"></span>
+                        <div class="steps__column">
+                            <div class="column__icon">
+                                <span class="icon-square"></span>
+                            </div>
+                            <p class="column__text">Share us preferable dates </p>
                         </div>
-                        <p class="column__text">Share us preferable dates </p>
-                    </div>
-                    <div class="steps__column">
-                        <div class="column__icon">
-                            <span class="icon-square"></span>
+                        <div class="steps__column">
+                            <div class="column__icon">
+                                <span class="icon-square"></span>
+                            </div>
+                            <p class="column__text">We will give you recommendations</p>
                         </div>
-                        <p class="column__text">We will give you recommendations</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="destination">
-            <p class="title">POPULAR DESTINATIONS</p>
-            <div class="destination__slider slider">
-                <input type="radio" name="slider" id="slide1">
-                <input type="radio" name="slider" id="slide2" checked>
-                <input type="radio" name="slider" id="slide3">
-                <div class="slider__wrap">
-                    <div class="slider__item">
-                        <img src="./images/destinationSpain.jpg" alt="Spain">
-                    </div>
-                    <div class="slider__item">
-                        <img src="./images/destinationJapan.jpg" alt="Japan">
-                    </div>
-                    <div class="slider__item">
-                        <img src="./images/destinationUSA.jpg" alt="USA">
-                    </div>
-                </div>
-                <nav class="slider__pagination">
-                    <label for="slide1">111111</label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-
-                </nav>
-                <div class="destination__button">
-                    <div class="button button__icon">Find More</div>
-                </div>
-                
-            </div>
-        </section>
-        <section class="travel">
-            <div class="container">
-                <p class="title">TRAVEL STORIES</p>
-                <div class="travel-block">
-                    <div class="travel__column travel-column">
-                        <img src="./images/storiesThailand.jpg" alt="Thailand">
-                        <div class="travel-column__info">
-                           <p class="travel-column__title">10 Photos of Attractive Thailand</p> 
-                           <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-                           </p>
-                           <a href="" class="travel-column__hidden">Reade more...</a>
+            </section>
+            <section class="destination">
+                <p class="title">POPULAR DESTINATIONS</p>
+                <div class="destination__slider slider">
+                    <input type="radio" name="slider" id="slide1">
+                    <input type="radio" name="slider" id="slide2" checked>
+                    <input type="radio" name="slider" id="slide3">
+                    <div class="slider__wrap">
+                        <div class="slider__item">
+                            <img src="./images/destinationSpain.jpg" alt="Spain">
+                        </div>
+                        <div class="slider__item">
+                            <img src="./images/destinationJapan.jpg" alt="Japan">
+                        </div>
+                        <div class="slider__item">
+                            <img src="./images/destinationUSA.jpg" alt="USA">
                         </div>
                     </div>
-                    <div class="travel__column travel-column">
-                        <img src="./images/storiesUtah.jpg" alt="Utah">
-                        <div class="travel-column__info">
-                           <p class="travel-column__title">Canyonlands National Park, Utah</p> 
-                           <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
-                           <a href="" class="travel-column__hidden">Reade more...</a>
-                        </div>
-                    </div>
-                    <div class="travel__column travel-column">
-                        <img src="./images/storiesMountains.jpg" alt="Mountains">
-                        <div class="travel-column__info">
-                           <p class="travel-column__title">I left my heart in the Mountains!</p> 
-                           <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
-                           <a href="" class="travel-column__hidden">Reade more...</a>
-                        </div>
-                    </div>
-                    <div class="travel__column travel-column">
-                        <img src="./images/storiesJourney.jpg" alt="Journey">
-                        <div class="travel-column__info">
-                           <p class="travel-column__title">The Longest journey in my life!</p> 
-                           <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
-                           <a href="" class="travel-column__hidden">Reade more...</a>
-                        </div>
+                    <nav class="slider__pagination">
+                        <label for="slide1">111111</label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+    
+                    </nav>
+                    <div class="destination__button">
+                        <div class="button button__icon">Find More</div>
                     </div>
                     
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer__text">All Rights Reserved © Travel Portal</div>
-    </footer>
-    
-    
-
+            </section>
+            <section class="travel">
+                <div class="container">
+                    <p class="title">TRAVEL STORIES</p>
+                    <div class="travel-block">
+                        <div class="travel__column travel-column">
+                            <img src="./images/storiesThailand.jpg" alt="Thailand">
+                            <div class="travel-column__info">
+                               <p class="travel-column__title">10 Photos of Attractive Thailand</p> 
+                               <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
+                               </p>
+                               <a href="" class="travel-column__hidden">Reade more...</a>
+                            </div>
+                        </div>
+                        <div class="travel__column travel-column">
+                            <img src="./images/storiesUtah.jpg" alt="Utah">
+                            <div class="travel-column__info">
+                               <p class="travel-column__title">Canyonlands National Park, Utah</p> 
+                               <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                               <a href="" class="travel-column__hidden">Reade more...</a>
+                            </div>
+                        </div>
+                        <div class="travel__column travel-column">
+                            <img src="./images/storiesMountains.jpg" alt="Mountains">
+                            <div class="travel-column__info">
+                               <p class="travel-column__title">I left my heart in the Mountains!</p> 
+                               <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                               <a href="" class="travel-column__hidden">Reade more...</a>
+                            </div>
+                        </div>
+                        <div class="travel__column travel-column">
+                            <img src="./images/storiesJourney.jpg" alt="Journey">
+                            <div class="travel-column__info">
+                               <p class="travel-column__title">The Longest journey in my life!</p> 
+                               <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                               <a href="" class="travel-column__hidden">Reade more...</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__text">All Rights Reserved © Travel Portal</div>
+        </footer>
+    </div>
     <script src="js/main.min.js"></script>
 </body>
 </html>
