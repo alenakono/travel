@@ -1,0 +1,30 @@
+.icon_logo{
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+.icon-square{
+    display: inline-block;
+    background-color: $color-title;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    &_first{
+        background-image: url(../images/step1.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &_second{
+        background-image: url(../images/step2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &_third{
+        background-image: url(../images/step3.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+
+}

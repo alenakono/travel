@@ -1,8 +1,14 @@
 @import "./constants";
 @import "./fonts";
 @import "./layouts/wrapper";
-@import "./header";
+@import "./layouts/header";
+@import "./layouts/columns";
+@import "./components/preview";
+@import "./components/_slider";
 @import "./null";
+@import "./mixins";
+@import "./placeholder";
+@import "./icons";
 
 
 @font-face {
@@ -40,6 +46,7 @@ body{
     font-size: 2rem;
     font-family: "Aleo", Verdana, sans-serif;
     font-weight: 400;
+    color: $color-brand;
 }
 *{
     margin: 0;
@@ -53,6 +60,28 @@ body{
     img{
         display: none;
     }
+}
+.button{
+    background-color: $color-brand;
+    font-family: "RedHatText";
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-color: transparent;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    }
+}
+.title{
+    color: $color-title;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "RedHatText";
 }
 .page{
     position: absolute;
@@ -74,20 +103,15 @@ body{
         left: 0;
     }
 }
-.preview{
-    color: $color-white;
-    margin-top: 32px;
+
+.steps__title{
+    margin: 80px 0 40px 0;
 }
-.preview-block{
-    max-width: 892px;
+.steps__column >*:not(:last-child){
+    margin-bottom: 30px;
 }
-.preview__title{
-    font-size: 80px;
-    font-weight: 700;
-}
-.preview__text{
-    font-style: italic;
-    font-weight: 700;
+.destination__title{
+    margin: 97px 0 46px 0;
 }
 
 

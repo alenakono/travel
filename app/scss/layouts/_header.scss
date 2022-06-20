@@ -16,11 +16,13 @@
 
 .navigation{
     display: flex;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
     
 }
 .navigation__link{
     padding: 0 42px;
-    font-size: 1.6rem;
+    
     font-family: 'RedHatText', Verdana, serif;
 }
 .logo{

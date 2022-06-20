@@ -1,0 +1,5 @@
+@import "./mixins";
+.layout-3-column{
+    @include columns($width: 30%);
+    text-align: center;
+}
