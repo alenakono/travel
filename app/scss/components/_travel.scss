@@ -1,0 +1,24 @@
+.travel-block{
+    padding: 40px 0;
+}
+.travel-column{
+    display: flex;
+    align-items: center;
+    img{
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+        min-width: 400px;
+    }
+}
+.travel-column:not(:last-child){
+    margin-bottom: 30px;
+}
+.travel-column__info{
+    margin-left: 30px;
+    max-width: 760px;
+}
+.travel-column__title{
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    padding-bottom: 24px;
+}

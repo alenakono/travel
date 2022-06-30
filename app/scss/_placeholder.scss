@@ -11,3 +11,6 @@
         @extend %hover;
     }
 }
+.slider__wrapper{
+    @extend %transition;
+}

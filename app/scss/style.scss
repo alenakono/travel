@@ -1,14 +1,16 @@
 @import "./constants";
 @import "./fonts";
-@import "./layouts/wrapper";
-@import "./layouts/header";
-@import "./layouts/columns";
-@import "./components/preview";
-@import "./components/_slider";
 @import "./null";
 @import "./mixins";
 @import "./placeholder";
 @import "./icons";
+@import "./layouts/wrapper";
+@import "./layouts/header";
+@import "./layouts/columns";
+@import "./components/preview";
+@import "./components/slider";
+@import "./components/travel";
+
 
 
 @font-face {
