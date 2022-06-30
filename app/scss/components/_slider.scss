@@ -13,10 +13,21 @@
 }
 .slider__item{
     max-width: 800px;
+    position: relative;
     img{
         border-radius: 16px;
         width: 100%;
     }
+}
+.slider__name{
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-family: 'RedHatText';
+    color: $color-white;
+    cursor:pointer;
 }
 
 .slider__item:not(:last-child){

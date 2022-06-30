@@ -1,6 +1,9 @@
 .travel-block{
     padding: 40px 0;
 }
+.travel__title{
+    margin-bottom: 40px;
+}
 .travel-column{
     display: flex;
     align-items: center;
@@ -19,6 +22,6 @@
 }
 .travel-column__title{
     font-size: 3.5rem;
-    line-height: 4.2rem;
+    line-height: 4.2px;
     padding-bottom: 24px;
 }
