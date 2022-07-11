@@ -3,12 +3,20 @@
     //height: 100%;
     overflow: hidden;
     margin: 0 auto;
+    @include media-tablet{
+        width: 360px;
+        overflow: hidden;
+    }
 }
-.slides, .slider__wrapper{
+.slider__wrapper{
     position: relative;
     display: flex;
     width: 300%;
     left: -40%;
+    
+    @include media-tablet{
+        left:0;
+    }
     
 }
 .slider__item{
@@ -16,8 +24,15 @@
     position: relative;
     img{
         border-radius: 16px;
-        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        @include media-tablet{
+            height: 210px;
+            width: 360px;
+    
+        }
     }
+    
 }
 .slider__name{
     position: absolute;
@@ -28,10 +43,18 @@
     font-family: 'RedHatText';
     color: $color-white;
     cursor:pointer;
+    @include media-tablet{
+        font-size: 2rem;
+        top: 10%;
+
+    }
 }
 
 .slider__item:not(:last-child){
     margin-right: 60px;
+    @include media-tablet{
+        margin-right: 0;
+    }
 }
 
 .slider__navigation{
@@ -52,6 +75,11 @@
         opacity: 1;
         transform: scale(1.1);
     }
+    @include media-tablet{
+        width: 7px;
+        height: 7px;
+    }
+    
 }
 .navigation__dots_active{
     opacity: 1;
@@ -59,4 +87,25 @@
 input[name="slider"] {
     position: absolute;
     visibility: hidden;
+}
+.slider__buttons{
+    display: flex;
+    justify-content: space-evenly
+}
+.slider__button{
+    background-image: url(../../images/arrowSlider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider__button_prev{
+    transform: rotate(-180deg);
+}
+.slider__button._off{
+    opacity: 50%;
+
 }

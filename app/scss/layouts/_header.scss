@@ -1,11 +1,13 @@
 .header{
-    //position: absolute;
     width: 100%;
-    //z-index: 50;
     color: $color-white;
     background-color: rgba(242, 120, 92, 0.7); 
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     padding: 25px 0;
+    @include media-tablet{
+        background-color: rgba(242, 120, 92, 0);
+        box-shadow: none;
+    }
 
 }
 .header-block{
@@ -19,11 +21,14 @@
     font-size: 1.6rem;
     line-height: 2.1rem;
     
+    
 }
 .navigation__link{
     padding: 0 42px;
-    
     font-family: 'RedHatText', Verdana, serif;
+    @include media-laptop{
+        padding: 0 15px;
+    }
 }
 .logo{
     display: flex;
@@ -33,10 +38,109 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 30px;
+    height: 30px;
 
 }
 .logo__text{
     font-size: 3.2rem;
     padding-left: 6px;
+    @include media-laptop{
+        font-size: 2.2rem;
+    }
+    @include media-tablet{
+        display: none;
+    }
+}
+.header__menu_mob{
+    display: none;
+    
+}
+.navigation__link_mob{
+    display: none;
+}
+@include media-tablet{
+    .header__menu_mob{
+        display: block;
+        z-index: 5;
+        position: relative;
+        width: 27px;
+        height: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .header__menu_mob._active {
+        left: 0;
+        span{
+            display: none
+        }
+    }
+    .header__menu_mob._active::after{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .header__menu_mob._active::before{
+        top: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    
+    .header__menu_mob span, 
+    .header__menu_mob::after, 
+    .header__menu_mob::before{
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        background-color: $color-white;
+    }
+    .header__menu_mob::after, 
+    .header__menu_mob::before{
+        content: "";
+    }
+    .header__menu_mob::after{
+        top:0;
+    }
+    .header__menu_mob::before{
+        bottom: 0;
+    }
+    .header__menu_mob span{
+        top:50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .header__navigation{
+        position: fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-title;
+        z-index: 1;
+        overflow: auto;
+        transition: all 0.3s ease-in-out;
+        ul{
+            flex-direction: column;
+            padding: 70px 15px 30px 44px;
+            
+        }
+        li{
+            font-size: 1.6rem;
+            padding-bottom: 10px;
+            text-align: right;
+            flex-wrap: wrap;
+            
+        }
+        .navigation__link_mob{
+            display: block;
+        }
+        .navigation__list_mob > li{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .header__navigation._active{
+        top: 0;
+    }
+    
+
+    
 }
 

@@ -10,6 +10,7 @@
 @import "./components/preview";
 @import "./components/slider";
 @import "./components/travel";
+@import "./components/_popup";
 
 
 
@@ -49,6 +50,15 @@ body{
     font-family: "Aleo", Verdana, sans-serif;
     font-weight: 400;
     color: $color-brand;
+    @include media-laptop{
+        font-size: 1.8rem;
+    }
+    @include media-tablet{
+        font-size: 1rem;
+    }
+}
+body._lock{
+    overflow: hidden;
 }
 *{
     margin: 0;
@@ -71,26 +81,41 @@ body{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     }
     &_small{
-        font-size: 1.6rem;
+        font-size: 2rem;
+    }
+    img{
+        display: inline;
+        margin-right: 12px;
+        @include media-tablet{
+            width: 8px;
+            margin-right: 6px;
+        }
+    }
+    @include media-laptop{
+        font-size: 1.5rem;
+    }
+    @include media-tablet{
+        font-size: 1.1rem;
+        padding: 7px 12px;
     }
     
 }
-.button_icon{
-    span{
-        background-image: url(../images/arrow.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 35px;
-    }
-    
-}
+
+
 .title{
     color: $color-title;
     font-size: 4rem;
-    line-height: 5.2rem;
+    line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     font-family: "RedHatText";
+    @include media-laptop{
+        font-size: 3rem;
+    }
+    @include media-tablet{
+        font-size: 1.4rem;
+    }
+    
 }
 .page{
     width: 100%;
@@ -109,32 +134,71 @@ body{
     background-image: url(../images/storiesBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.travel{
-    background: rgba(255, 255, 255, 0.7);
+    @include media-tablet{
+        background-image: url(../images/storisBackground_mob.jpg);
+    }
+    
 }
 
 
+.steps{
+    padding-top: 80px;
+    @include media-tablet{
+        padding-top: 10px;
+    }
+}
 .steps__title{
-    margin: 80px 0 40px 0;
+    margin: 0px 0 40px 0;
+    @include media-tablet{
+        margin-bottom: 20px;
+    }
 }
+    
+
 .steps__column >*:not(:last-child){
     margin-bottom: 30px;
 }
-
-.destination__title{
-    margin: 97px 0 46px 0;
+.destination{
+    padding: 97px 0 80px 0;
+    @include media-tablet{
+        padding: 20px 0px;
+    }
 }
+.destination__title{
+    margin: 0px 0 46px 0;
+    @include media-tablet{
+        margin-bottom: 20px;
+    }
+}
+
 .destination__button{
     text-align: center;
 }
 .footer-block{
     padding: 21px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tablet{
+        justify-content: center;
+    }
+    
 }
 .footer__text{
     color: $color-white;
     text-align: center;
     font-family: 'RedHatText';
+    @include media-tablet{
+        display: none;
+    }
+}
+.footer__links{
+    display: flex;
+}
+.footer__link{
+    width: 34px;
+    margin-right: 22px;
+    
 }
 
 

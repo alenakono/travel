@@ -25,6 +25,12 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    @include media-tablet{
+        width: 70px;
+        height: 70px;
+    }
     
 
 }
+
+

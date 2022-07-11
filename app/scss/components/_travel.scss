@@ -1,8 +1,26 @@
+.travel{
+    background: rgba(255, 255, 255, 0.7);
+}
 .travel-block{
     padding: 40px 0;
+    @include media-tablet{
+        padding: 10px 0;
+    }
 }
 .travel__title{
     margin-bottom: 40px;
+    line-height: 18px;
+    @include media-tablet{
+        margin-bottom: 20px;
+    }
+    
+}
+.travel__button{
+    margin: 40px auto 0 auto;
+}
+.travel__image{
+    max-width: 400px;
+    
 }
 .travel-column{
     display: flex;
@@ -10,18 +28,44 @@
     img{
         filter: drop-shadow(0px 4px 4px #0D606F);
         border-radius: 16px;
-        min-width: 400px;
+        width: 100%;
+        @include media-tablet{
+            height: 130px;
+            object-fit: cover;
+        }
     }
 }
 .travel-column:not(:last-child){
     margin-bottom: 30px;
+    @include media-tablet{
+        margin-bottom: 15px;
+    }
 }
 .travel-column__info{
     margin-left: 30px;
     max-width: 760px;
+    flex-basis: 70%;
+    flex-shrink: 1;
+    @include media-tablet{
+        margin-left: 10px;
+    }
 }
 .travel-column__title{
     font-size: 3.5rem;
-    line-height: 4.2px;
+    line-height: 4.2rem;
     padding-bottom: 24px;
+    @include media-laptop{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+    @include media-tablet{
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        line-height: 13px;
+    }
+}
+.travel-column__text{
+    @include media-tablet{
+        font-size: 0.9rem;
+    }
 }

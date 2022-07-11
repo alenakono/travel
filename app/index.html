@@ -21,21 +21,29 @@
                                 </a>
                                 <nav class="header__navigation menu">
                                     <ul class="navigation">
-                                        <li class="navigation__link"><a href="#">How It Works</a>
+                                        <li class="navigation__link"><a href="#preview">How It Works</a>
                                             </li>
-                                        <li class="navigation__link"><a href="#">Plan Your Trip</a> </li>
-                                        <li class="navigation__link"><a href="#">Destinations</a>
+                                        <li class="navigation__link"><a href="#steps">Plan Your Trip</a> </li>
+                                        <li class="navigation__link"><a href="#destination">Destinations</a>
                                             </li>
-                                        <li class="navigation__link"><a href="#">Travel Stories</a></li>
+                                        <li class="navigation__link"><a href="#travel">Travel Stories</a></li>
+                                        <li class="navigation__link navigation__link_mob"><a href="#">Account</a></li>
+                                        <li class="navigation__link navigation__link_mob">
+                                            <a href="#media">Social media</a>
+                                            
+                                        </li>
                                     </ul>
                                 </nav>
                                 <div class="header__buttons">
-                                    <button class="button button_small">Login</button>
+                                    <button class="button button_small" id="popup-login_open">Login</button>
+                                </div>
+                                <div class="header__menu_mob">
+                                    <span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <section class="preview">
+                    <section class="preview" id="preview">
                         <div class="container">
                             <div class="preview-block">
                                 <h1 class="preview__title">Explore the beauty of the World</h1>
@@ -52,7 +60,7 @@
                 </div>  
             </div>
             <div class="content">
-                <section class="steps">
+                <section class="steps" id="steps">
                     <div class="container">
                         <p class="steps__title title">3 STEPS TO THE PERFECT TRIP</p>
                         <div class="layout-3-column">
@@ -71,7 +79,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="destination">
+                <section class="destination" id="destination">
                     <p class="title destination__title">POPULAR DESTINATIONS</p>
                     <div class="slider">
                         <div class="slider__wrapper">
@@ -89,23 +97,27 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slider__buttons">
+                        <div class="slider__button slider__button_prev _off"></div>
+                        <div class="slider__button slider__button_next"></div>
+                    </div>
                     <div class="slider__navigation">
                         <span class="navigation__dots"></span>
                         <span class="navigation__dots navigation__dots_active"></span>
                         <span class="navigation__dots"></span>
                     </div>
                     <div class="destination__button">
-                        <button class="button button_icon"><span></span> Find More</button>
+                        <button class="button button_icon"><img src="./images/arrow.svg" alt="arrow"> Find More</button>
                     </div>
                 </section>
                 <div class="title travel__title container">TRAVEL STORIES</div>
             </div>
             <div class="content__background">
-                <section class="travel">
+                <section class="travel" id="travel">
                     <div class="container ">
                         <div class="travel-block">
                             <div class="travel__column travel-column">
-                                <img src="./images/storiesThailand.jpg" alt="Thailand">
+                                <div class="travel__image"><img src="./images/storiesThailand.jpg" alt="Thailand"></div>
                                 <div class="travel-column__info">
                                    <p class="travel-column__title">10 Photos of Attractive Thailand</p> 
                                    <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
@@ -114,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="travel__column travel-column">
-                                <img src="./images/storiesUtah.jpg" alt="Utah">
+                                <div class="travel__image"><img src="./images/storiesUtah.jpg" alt="Utah"></div>
                                 <div class="travel-column__info">
                                    <p class="travel-column__title">Canyonlands National Park, Utah</p> 
                                    <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
@@ -122,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="travel__column travel-column">
-                                <img src="./images/storiesMountains.jpg" alt="Mountains">
+                                <div class="travel__image"> <img src="./images/storiesMountains.jpg" alt="Mountains"></div>
                                 <div class="travel-column__info">
                                    <p class="travel-column__title">I left my heart in the Mountains!</p> 
                                    <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
@@ -130,26 +142,61 @@
                                 </div>
                             </div>
                             <div class="travel__column travel-column">
-                                <img src="./images/storiesJourney.jpg" alt="Journey">
+                                <div class="travel__image"><img src="./images/storiesJourney.jpg" alt="Journey"></div>
                                 <div class="travel-column__info">
                                    <p class="travel-column__title">The Longest journey in my life!</p> 
                                    <p class="travel-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
                                    <a href="" class="travel-column__hidden">Read more...</a>
                                 </div>
                             </div>
-                            
+                            <div class="destination__button">
+                                <button class="button button_icon"><img src="./images/arrow.svg" alt="arrow"> See More</button>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <footer>
                     <div class="container">
-                        <div class="footer-block">
+                        <div class="footer-block" id="media">
+                            <div class="footer__empty"></div>
                             <div class="footer__text">All Rights Reserved © Travel Portal</div>
+                            <div class="footer__links">
+                                <a href="https://www.instagram.com/" target="_blank" class="footer__link"><img src="./images/icons_instagram.svg" alt="instagram"></a>
+                                <a href="https://www.youtube.com/" target="_blank" class="footer__link"><img src="./images/icons_video.svg" alt="youtube"></a>
+                                <a href="https://twitter.com/?lang=ru" target="_blank" class="footer__link"><img src="./images/icons_twitter.svg" alt="twitter"></a>
+                                
+                            </div>
                         </div>
                         
                     </div>
                     
                 </footer>
+                <div class="popup popup-login" id = "popup-login">
+                    <div class="popup__container">
+                        <div class="popup__body popup-login__body">
+                            <p class="popup__title">Log in to your account</p>
+                            <div class="popup__buttons">
+                                <button class="popup__button popup__button_colored popup__button_iconed"><img src="./images/facebook.svg" alt="">Sign In with Facebook</button>
+                                <button class="popup__button popup__button_iconed"><img src="./images/Google Logo.svg" alt="">Sign In with Google</button></div>
+                        
+                            
+                            <p>or</p>
+                            <div class="popup__form">
+                                <p class="form__text">E-mail</p>
+                                <input type="email">
+                            </div>
+                            <div class="popup__form">
+                                <p class="form__text">Password</p>
+                                <input type="password">
+                            </div>
+                            <button class="popup__button popup__button_green">Sign In</button>
+                            <p class="text_underline">Forgot Your Password?</p>
+                            <div class="line"></div>
+                            <span>Don’t have an account?</span> <span class="text_underline"> Register</span>
+                            <div class="popup__close popup-login__close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
 
