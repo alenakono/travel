@@ -11,23 +11,36 @@ if (menuBurger) {
     menuBody.querySelectorAll('.navigation__link').forEach(link => {
         link.addEventListener('click', () => {
             document.body.classList.remove('_lock');
-            menuBurger.classList.remove('_active');menuBody.classList.remove('_active');
+            menuBurger.classList.remove('_active');
+            menuBody.classList.remove('_active');
         });
     });
 }
 // popup
-const openPopup = document.getElementById('popup-login_open');
+const openPopupLogin = document.querySelectorAll('.popup-login__open');
+const openPopupRegister = document.querySelector('.popup-register__open');
 const closePopup = document.querySelectorAll('.popup__close');
 const popupLogin = document.getElementById('popup-login');
+const popupRegister = document.getElementById('popup-register');
 const popups = document.querySelectorAll('.popup');
+console.log(popupLogin);
 
-openPopup.addEventListener('click', function(e) {
-    popupLogin.classList.add('_active');
-}); 
-
-if(closePopup.length>0) {
-    for (let index = 0; index < closePopup.length; index++) {
-        const close = closePopup[index];
-        
-    }
+if (popups) {
+    openPopupLogin.forEach(button => {
+        button.addEventListener('click', () => {
+            popupLogin.classList.add('_active');
+        });
+    });
+    openPopupRegister.addEventListener('click', () => {
+        popupRegister.classList.add('_active');
+    });
+    closePopup.forEach(close => {
+        close.addEventListener('click', () => {
+            popups.forEach(popup => {
+                popup.classList.remove('_active');
+            });
+        });
+    });
 }
+ 
+

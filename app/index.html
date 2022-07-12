@@ -27,7 +27,7 @@
                                         <li class="navigation__link"><a href="#destination">Destinations</a>
                                             </li>
                                         <li class="navigation__link"><a href="#travel">Travel Stories</a></li>
-                                        <li class="navigation__link navigation__link_mob"><a href="#">Account</a></li>
+                                        <li class="navigation__link navigation__link_mob popup-login__open"><span>Account</span></li>
                                         <li class="navigation__link navigation__link_mob">
                                             <a href="#media">Social media</a>
                                             
@@ -35,7 +35,7 @@
                                     </ul>
                                 </nav>
                                 <div class="header__buttons">
-                                    <button class="button button_small" id="popup-login_open">Login</button>
+                                    <button class="button button_small popup-login__open" id="popup-login__open">Login</button>
                                 </div>
                                 <div class="header__menu_mob">
                                     <span></span>
@@ -192,7 +192,26 @@
                             <button class="popup__button popup__button_green">Sign In</button>
                             <p class="text_underline">Forgot Your Password?</p>
                             <div class="line"></div>
-                            <span>Don’t have an account?</span> <span class="text_underline"> Register</span>
+                            <span>Don’t have an account?</span> <span class="text_underline popup-register__open" id="popup-register__open"> Register</span>
+                            <div class="popup__close popup-login__close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup-register" id = "popup-register">
+                    <div class="popup__container">
+                        <div class="popup__body popup-register__body">
+                            <p class="popup__title">Create account</p>
+                            <div class="popup__form">
+                                <p class="form__text">E-mail</p>
+                                <input type="email">
+                            </div>
+                            <div class="popup__form">
+                                <p class="form__text">Password</p>
+                                <input type="password">
+                            </div>
+                            <button class="popup__button popup__button_green">Sign Up</button>
+                            <div class="line"></div>
+                            <span>Already have an account?</span> <span class="text_underline popup-login__open"> Log In</span>
                             <div class="popup__close popup-login__close">&#10006</div>
                         </div>
                     </div>
