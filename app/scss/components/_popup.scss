@@ -30,11 +30,23 @@
     font-size: 1.6rem;
     font-family: "Aleo";
     font-weight: 400;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    
     @include media-tablet{
         width: 320px;
         padding: 15px 20px;
 
     }
+}
+.popup__body ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background:rgba(13, 96, 111, 0.16);
+
+}
+.popup__body ::-webkit-scrollbar-track{
+    border-radius:10px;
 }
 
 .popup__title{

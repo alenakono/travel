@@ -4,10 +4,12 @@ const sliderDots = document.querySelectorAll('.navigation__dots');
 let sliderPosition = 0;
 let dotIndex = 0;
 
+
 sliderDots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-        sliderPosition = 35 * index,
-        slider.style.left = -sliderPosition + '%';
+        let slideWidth = document.querySelector('.slider__item').offsetWidth;
+        sliderPosition = slideWidth * index,
+        slider.style.left = -sliderPosition + 'px';
         dotIndex = index;
         thisSlide(dotIndex);
         

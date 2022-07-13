@@ -42,5 +42,11 @@ if (popups) {
         });
     });
 }
+if(popupRegister){
+    const registerClose = popupRegister.querySelector('.popup-login__open');
+    registerClose.addEventListener('click', () => {
+        popupRegister.classList.remove('_active');
+    });
+}
  
 

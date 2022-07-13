@@ -3,6 +3,7 @@
     //height: 100%;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
     @include media-tablet{
         width: 360px;
         overflow: hidden;
@@ -96,11 +97,12 @@ input[name="slider"] {
     background-image: url(../../images/arrowSlider.svg);
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 30px;
     width: 100px;
     height: 100px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(0, -50%);
 }
 .slider__button_prev{
     transform: rotate(-180deg);
